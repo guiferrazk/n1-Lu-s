@@ -35,7 +35,7 @@
   <!-- Conteúdo principal da página -->
   <main class="container">
     <!-- Formulário de login -->
-    <form action="#" method="post">
+    <form action="#" method="post" onsubmit="return redirecionarPaginaPrincipal()">
       <h1>Login</h1>
 
       <!-- Campo de e-mail -->
@@ -60,7 +60,7 @@
       </div>
 
       <!-- Botão de envio -->
-      <button type="submit" class="login">Login</button>
+      <button type="submit" class="login" >Login</button>
 
       <!-- Link para cadastro -->
       <div class="register-link">
@@ -70,4 +70,10 @@
   </main>
 
 </body>
+<script>
+  function redirecionarPaginaPrincipal() {
+    window.location.href = "principal.html";
+    return false;
+  }
+</script>
 </html>
